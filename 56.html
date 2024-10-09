@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Ticker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.ticker-container {
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.ticker-wrap {
+    /* display: flex; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-move {
+    width:100%;
+    display: flex;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    /* 50% {
+        transform: translateX(-100%);
+    } */
+     100% {
+        transform: translateX(-100%);
+    }
+}
+
+</style>
+<body>
+    <div class="ticker-container">
+        <div class="ticker-wrap">
+            <div class="ticker-move">
+                <div class="ticker-item">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <!-- <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Aliquid distinctio eos, nemo ipsa nulla quam porro, <br>voluptatibus praesentium earum, libero magni dolore ullam eveniet. Fugit explicabo provident aliquam magni <br>exercitationem?</div> -->
+                <!-- <div class="ticker-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio eos, nemo ipsa nulla quam porro, voluptatibus praesentium earum, libero magni dolore ullam eveniet. Fugit explicabo provident aliquam magni exercitationem?</div>
+                <div class="ticker-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio eos, nemo ipsa nulla quam porro, voluptatibus praesentium earum, libero magni dolore ullam eveniet. Fugit explicabo provident aliquam magni exercitationem?</div> -->
+                 <div class="ticker-item">News Item 2</div>
+                <div class="ticker-item">News Item 3</div>
+                <div class="ticker-item">News Item 4</div> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // script.js
+    document.addEventListener("DOMContentLoaded", function() {
+    const tickerMove = document.querySelector('.ticker-move');
+    const tickerItems = document.querySelectorAll('.ticker-item');
+
+    // Clone the ticker items to make the ticker infinite
+    tickerItems.forEach(item => {
+        const clone = item.cloneNode(true);
+        tickerMove.appendChild(clone);
+    });
+});
+
+    </script>
+</body>
+</html>

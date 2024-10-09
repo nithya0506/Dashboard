@@ -1,0 +1,270 @@
+
+:root
+{
+  --background:#0C7C59;
+
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar for EB form*/
+
+.navbar-brand
+{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 28px !important;
+color:#fff !important;
+}
+
+.navbar {
+  display:flex !important;
+  background-color: var(--background);
+  align-items: center !important;
+  /* justify-content: space-between !important; */
+} 
+
+.navbar-nav li
+{
+  margin-left: 20px !important;
+}
+.nav-item a{
+ margin-left: 10px; 
+font-size: 18px;
+color: white !important;
+font-weight: 400;
+  
+}
+
+
+/* Navbar End */
+
+/* purchase form background */
+.bgimage {
+  background-image: url(/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 125vh !important;
+}
+.container_purchase {
+  background-color: #fff; 
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12) !important;
+  width: 50% !important; 
+  border-radius: 20px; 
+  margin: auto !important;
+  margin-top: 10px !important;
+  opacity: 0.9;
+  height: 115vh;
+  display: flex;
+  padding: 0 50px;
+}
+.title {
+  color: navy;
+  text-align: center;
+}
+.logoutbtn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 10%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 3px;
+  border-radius: 10px;
+}
+.logoutbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.form-control1 {
+  width: 20%;
+}
+/* purchase edit form */
+
+.container1 { 
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12) !important;
+  width: 50% !important;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin: auto !important;
+  opacity: 0.9;
+  height: 105vh;
+  /* display: flex; */
+  padding: 0 50px;
+}
+.editform {
+  /* background-color: #bddd99; */
+  background-image: url(/images/bg.png);
+  height:auto;
+}
+
+input,
+select,
+textarea {
+  border: 2px solid #4caf50 !important;
+}
+.buttons {
+  margin-left: 10px;
+  background-color: #23c2b2 !important;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.buttons i {
+  color: white;
+  font-size: 23px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black !important;
+  border-collapse: collapse !important;
+}
+td {
+ background-color: #d6e6ff;
+  /* background-color: #e1eff6; */
+  padding: 5px;
+}
+
+th {
+  background-color: #b6e2d3;
+  padding: 5px;
+  text-align: center !important;
+ 
+}
+/* Eb edit form */
+
+.container2 {
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12) !important;
+  width: 50% !important;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin: auto !important;
+  opacity: 0.9;
+  height:105vh; 
+  display: flex;
+  padding: 0 50px;
+}
+
+/* Purchase form media query */
+
+@media only screen and (max-width: 480px) {
+ .bgimage {
+  background-image: none;
+  background-color: darkcyan !important; 
+   height: 150vh !important;
+  
+}
+.container_purchase {
+  background-color: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12) !important;
+  width: 80% !important;
+  border-radius: 20px;
+  margin: auto !important;
+  opacity: 0.9;
+  height: 140vh;
+  display: flex;
+  padding: 0 50px;
+  margin-top: 20px !important;
+}
+.title {
+  color: navy;
+  text-align: center;
+}
+.logoutbtn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 30%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 3px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+.logoutbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.form-control1 {
+  width: 20%;
+}
+
+
+.search
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbtn
+{
+  position:absolute;
+  top:83%;
+  right: 60px;
+  
+}
+/* purchase  Edit form */
+.container1 { 
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12) !important;
+  width: 90% !important;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin: auto !important;
+  opacity: 0.9;
+  height: 120vh;
+  /* display: flex; */
+  padding: 0 30px;
+}
+.editform {
+  background-color: #bddd99;
+  height:auto;
+}
+}
+.Eb-editform{
+ background-color: #bddd99;
+  height:100vh;
+}
+.card
+{
+  height: 60vh;
+  width: 500px; 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+  padding: 0;
+  
+}
+.logo1
+{
+  height: 100px;
+  width: 100px;
+
+  
+}
+.loginform
+{
+   background-color: #bddd99;
+  height:100vh;
+}
+
